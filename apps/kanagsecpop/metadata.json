@@ -1,0 +1,23 @@
+{ 
+	"id": "kanagsecpop",
+	"name": "KanagawaPop clock ",
+	"shortName":"kanagawapop",
+	"version":"0.03",
+	"description": "A clock that displays the great wave of kanagawa (image from wikipedia) with seconds in active mode with sick colors.",
+	"icon": "app.png",
+	"tags": "clock, kanagawa, wave, pop",
+	"type": "clock",
+	"supports" : ["BANGLEJS2"],  
+	"readme": "README.md",
+	"allow_emulator":true,
+	"storage": 
+	[
+		{"name":"kanagsecpop.app.js","url":"app.js"},
+		{"name":"kanagsecpop.img","url":"app-icon.js","evaluate":true}
+	],
+	"screenshots" : 
+	[
+		{ "url":"screenshot.png" },
+		{ "url":"screenshot2.png" } 
+	]
+}
