@@ -31,7 +31,7 @@ function getTemperature() {
   try {
     var weatherJson = storage.readJSON('weather.json');
     var weather = weatherJson.weather;
-    return "Temp: " + Math.round(1.8 * (weather.temp - 273) + 32);
+    return Math.round(1.8 * (weather.temp - 273) + 32);
   } catch (ex) {
     return "";
   }
@@ -84,8 +84,9 @@ function draw() {
   }
 
   g.setColor(g.theme.bg);
-  g.setFont("8x16");
+  g.setFont("DarumadropOneRegular_small")
   g.drawString(temperature, 4, g.getHeight() - 40);
+  g.setFont("8x16");
   g.drawString(batteryLvl, g.getWidth() - g.stringWidth(batteryLvl) - 2, y);
 
   // work out locale-friendly date/time
