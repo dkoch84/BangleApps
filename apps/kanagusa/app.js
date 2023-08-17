@@ -31,7 +31,7 @@ function getTemperature() {
   try {
     var weatherJson = storage.readJSON('weather.json');
     var weather = weatherJson.weather;
-    return "Temp: " + Math.round(weather.temp - 273.15);
+    return "Temp: " + Math.round(1.8 * (weather.temp - 273) + 32);
   } catch (ex) {
     return "";
   }

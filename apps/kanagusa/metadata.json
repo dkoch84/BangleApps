@@ -1,0 +1,23 @@
+{ 
+	"id": "kanagusa",
+	"name": "Kanagawausa clock",
+	"shortName":"kanagawausa",
+	"version":"0.03",
+	"description": "A clock that displays the great wave of kanagawa (image from wikipedia) with seconds in active mode, 'Murica mode.",
+	"icon": "app.png",
+	"tags": "clock, kanagawa, wave",
+	"type": "clock",
+	"supports" : ["BANGLEJS2"],  
+	"readme": "README.md",
+	"allow_emulator":true,
+	"storage": 
+	[
+		{"name":"kanagusa.app.js","url":"app.js"},
+		{"name":"kanagusa.img","url":"app-icon.js","evaluate":true}
+	],
+	"screenshots" : 
+	[
+		{ "url":"screenshot.png" },
+		{ "url":"screenshot2.png" } 
+	]
+}
